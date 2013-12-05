@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="searchController">
+            <connections>
+                <outlet property="hud" destination="4" id="16"/>
+                <outlet property="tableCont" destination="141" id="151"/>
+                <outlet property="txtSearch" destination="30" id="164"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="20" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pub-bg.png" id="155">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="top.png" id="18">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="footer.png" id="19">
+                    <rect key="frame" x="0.0" y="472" width="320" height="8"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="20">
+                    <rect key="frame" x="8" y="7" width="39" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="back.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionBack" destination="-1" eventType="touchUpInside" id="163"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="search.png" id="29">
+                    <rect key="frame" x="56" y="5" width="212" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="30">
+                    <rect key="frame" x="61" y="4" width="164" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="203"/>
+                    </connections>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="107" sectionHeaderHeight="1" sectionFooterHeight="1" id="141">
+                    <rect key="frame" x="0.0" y="87" width="320" height="365"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="153"/>
+                        <outlet property="delegate" destination="-1" id="154"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="196">
+                    <rect key="frame" x="120" y="51" width="80" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.38823533059999998" green="0.2941176593" blue="0.15294118230000001" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="blackSquare.png" id="11">
+                    <rect key="frame" x="104" y="193" width="95" height="95"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" animating="YES" style="whiteLarge" id="12">
+                    <rect key="frame" x="133" y="237" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please Wait..." lineBreakMode="tailTruncation" minimumFontSize="10" id="13">
+                    <rect key="frame" x="111" y="208" width="105" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="36" height="28"/>
+        <image name="blackSquare.png" width="95" height="95"/>
+        <image name="footer.png" width="320" height="49"/>
+        <image name="pub-bg.png" width="320" height="120"/>
+        <image name="search.png" width="212" height="30"/>
+        <image name="top.png" width="320" height="86"/>
+    </resources>
+</document>

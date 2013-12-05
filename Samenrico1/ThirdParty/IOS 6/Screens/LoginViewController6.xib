@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="loginView" destination="1669" id="1727"/>
+                <outlet property="txtPassword" destination="501" id="550"/>
+                <outlet property="txtUserName" destination="309" id="352"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="navBar.png" id="4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="10">
+                    <rect key="frame" x="6" y="9" width="35" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="back.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionBack:" destination="-1" eventType="touchUpInside" id="28"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loginbg.png" id="57">
+                    <rect key="frame" x="10" y="196" width="300" height="166"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="reg-signin.png" id="70">
+                    <rect key="frame" x="10" y="169" width="113" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="105">
+                    <rect key="frame" x="10" y="169" width="51" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                    <state key="normal" title="Sign in">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="121">
+                    <rect key="frame" x="64" y="169" width="54" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionRegister:" destination="-1" eventType="touchUpInside" id="1654"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="login.png" id="167">
+                    <rect key="frame" x="58" y="215" width="215" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pass.png" id="443">
+                    <rect key="frame" x="59" y="256" width="215" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="225">
+                    <rect key="frame" x="118" y="348" width="85" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Login" backgroundImage="submit.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionLogin:" destination="-1" eventType="touchUpInside" id="354"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="240">
+                    <rect key="frame" x="199" y="294" width="149" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="forgot.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionForget:" destination="-1" eventType="touchUpInside" id="355"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter UserName" minimumFontSize="17" id="309">
+                    <rect key="frame" x="97" y="214" width="170" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.1019607843" green="0.20784313730000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="356"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="17" id="501">
+                    <rect key="frame" x="99" y="255" width="170" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.1019607843" green="0.20784313730000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="504"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="906">
+                    <rect key="frame" x="0.0" y="487" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="email.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionEmail:" destination="-1" eventType="touchUpInside" id="1777"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1344">
+                    <rect key="frame" x="64" y="487" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="facebook.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionFacebook:" destination="-1" eventType="touchUpInside" id="1776"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1365">
+                    <rect key="frame" x="128" y="487" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="twitter.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionTwitter:" destination="-1" eventType="touchUpInside" id="1775"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1382">
+                    <rect key="frame" x="192" y="487" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="contactus.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionAboutUs:" destination="-1" eventType="touchUpInside" id="2168"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1570">
+                    <rect key="frame" x="256" y="487" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="shelf.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionShelf:" destination="-1" eventType="touchUpInside" id="1778"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="settingt.png" id="1751">
+                    <rect key="frame" x="95" y="5" width="130" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.92549026010000002" green="0.90196084980000002" blue="0.86274516580000005" alpha="1" colorSpace="deviceRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="1669">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="312"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loginbg.png" id="1670">
+                    <rect key="frame" x="11" y="152" width="300" height="158"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You are Login in Samenrico" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1717">
+                    <rect key="frame" x="21" y="154" width="259" height="101"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <color key="textColor" red="1" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1691">
+                    <rect key="frame" x="108" y="248" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Logout" backgroundImage="submit.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionLogOut:" destination="-1" eventType="touchUpInside" id="1750"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logout.png" id="1862">
+                    <rect key="frame" x="34" y="8" width="238" height="138"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.90588241820000004" green="0.88235300780000003" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="36" height="28"/>
+        <image name="contactus.png" width="64" height="64"/>
+        <image name="email.png" width="32" height="32"/>
+        <image name="facebook.png" width="85" height="17"/>
+        <image name="forgot.png" width="215" height="35"/>
+        <image name="login.png" width="57" height="28"/>
+        <image name="loginbg.png" width="240" height="150"/>
+        <image name="logout.png" width="238" height="138"/>
+        <image name="navBar.png" width="320" height="53"/>
+        <image name="pass.png" width="215" height="35"/>
+        <image name="reg-signin.png" width="113" height="25"/>
+        <image name="settingt.png" width="138" height="35"/>
+        <image name="shelf.png" width="128" height="128"/>
+        <image name="submit.png" width="85" height="24"/>
+        <image name="twitter.png" width="78" height="17"/>
+    </resources>
+</document>

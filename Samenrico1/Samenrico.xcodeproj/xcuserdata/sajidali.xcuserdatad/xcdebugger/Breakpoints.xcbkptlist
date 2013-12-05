@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Downloads/HTTPBOOKDOWNLOAD.m"
+         timestampString = "387919533.073771"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "164"
+         endingLineNumber = "164"
+         landmarkName = "-ErrorMessage:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/read/tableList.m"
+         timestampString = "388622116.897697"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "196"
+         endingLineNumber = "196"
+         landmarkName = "-tableView:didSelectRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/read/tableList.m"
+         timestampString = "388091407.127415"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "113"
+         endingLineNumber = "113"
+         landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/Box/Controller/bookDetail.m"
+         timestampString = "388696548.123626"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "542"
+         endingLineNumber = "542"
+         landmarkName = "-paymentQueue:updatedTransactions:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/Box/Controller/bookDetail.m"
+         timestampString = "388696548.123626"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "547"
+         endingLineNumber = "547"
+         landmarkName = "-paymentQueue:updatedTransactions:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/Box/Controller/articleDetail.m"
+         timestampString = "388694024.849586"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "332"
+         endingLineNumber = "332"
+         landmarkName = "-purchase:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/Box/Controller/articleDetail.m"
+         timestampString = "388694024.849586"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "301"
+         endingLineNumber = "301"
+         landmarkName = "-actionDownload2"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/Box/Controller/bookDetail.m"
+         timestampString = "388693131.800584"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "69"
+         endingLineNumber = "69"
+         landmarkName = "-acctionGetBookDetail2"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/read/tableList.m"
+         timestampString = "388622116.390875"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "175"
+         endingLineNumber = "175"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/shelf/Controller/shelfViewController.m"
+         timestampString = "388688585.764396"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "234"
+         endingLineNumber = "234"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/shelf/Controller/shelfViewController.m"
+         timestampString = "388689042.922961"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "113"
+         endingLineNumber = "113"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Samenrico/shelf/Controller/shelfViewController.m"
+         timestampString = "388689076.421832"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "98"
+         endingLineNumber = "98"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Downloads/HTTPBOOKDOWNLOAD.m"
+         timestampString = "388689254.689261"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "113"
+         endingLineNumber = "113"
+         landmarkName = "-unzip"
+         landmarkType = "5">
+      </FileBreakpoint>
+   </FileBreakpoints>
+</Bucket>

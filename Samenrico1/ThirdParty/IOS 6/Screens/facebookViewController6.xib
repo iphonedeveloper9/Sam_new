@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="facebookViewController">
+            <connections>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="webView" destination="8" id="66"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="signup-bg.png" id="4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="footer.png" id="182">
+                    <rect key="frame" x="0.0" y="560" width="320" height="8"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="top.png" id="5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="facebook.png" id="154">
+                    <rect key="frame" x="118" y="54" width="85" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6">
+                    <rect key="frame" x="6" y="7" width="36" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="back_btn.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="acctionBack:" destination="-1" eventType="touchUpInside" id="67"/>
+                    </connections>
+                </button>
+                <webView opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" id="8">
+                    <rect key="frame" x="0.0" y="87" width="320" height="453"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="114"/>
+                    </connections>
+                </webView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo.png" id="119">
+                    <rect key="frame" x="97" y="2" width="126" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo.png" width="126" height="37"/>
+        <image name="back_btn.png" width="36" height="28"/>
+        <image name="facebook.png" width="85" height="17"/>
+        <image name="footer.png" width="320" height="49"/>
+        <image name="signup-bg.png" width="320" height="480"/>
+        <image name="top.png" width="320" height="86"/>
+    </resources>
+</document>

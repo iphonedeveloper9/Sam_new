@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="About_SubcribeViewController">
+            <connections>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="qxy-xG-f2P">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editor's picks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AQ6-lb-igE">
+                            <rect key="frame" x="83" y="11" width="148" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33725491169999999" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AqW-af-XY0">
+                    <rect key="frame" x="10" y="10" width="36" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="back_btn.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_BackClick:" destination="-1" eventType="touchUpInside" id="eDn-kz-Xip"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8ne-MU-B7g">
+                    <rect key="frame" x="52" y="421" width="222" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Subscribe">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DMA-YJ-Q7o">
+                    <rect key="frame" x="11" y="52" width="300" height="130"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">SamEnrico sells only digital copies of 
+publications which can be accessed on a 
+variety of smartphones, iPads, iPhones, 
+Android devices and tablets, we do not 
+offer physical print copies, if you require 
+print copies or subscriptions, please 
+contact the publisher.
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m7o-Rb-j2c">
+                    <rect key="frame" x="11" y="182" width="300" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">All subscriptions are valid only from 
+current issue.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3vq-Dc-KFZ">
+                    <rect key="frame" x="11" y="241" width="300" height="123"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">SamEnrico sells only digital copies of 
+publications which can be accessed on a 
+variety of smartphones, iPads, iPhones, 
+Android devices and tablets, we do not 
+offer physical print copies, if you require 
+print copies or subscriptions, please 
+contact the publisher.
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uz8-91-7Hw">
+                    <rect key="frame" x="11" y="372" width="300" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">All subscriptions are valid only from 
+current issue.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_btn.png" width="36" height="28"/>
+    </resources>
+</document>
