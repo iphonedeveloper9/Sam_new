@@ -282,7 +282,6 @@
         }
         else
         {
-            
             UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
             activityIndicator.alpha = 1.0;
             activityIndicator.tag = button.tag + 100;
@@ -304,6 +303,7 @@
 
 - (void)carouselDidEndScrollingAnimation:(iCarousel *)aCarousel
 {
+    if (arrayBook) {
     [self.view bringSubviewToFront:lblMagazineTitle];
     
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
@@ -319,6 +319,7 @@
     
     
     [lblMagazineTitle setText:dtStr];
+    }
 }
 
 - (CGFloat)carouselItemWidth:(iCarousel *)carousel
@@ -417,6 +418,7 @@
 }
 
 #pragma mark-User Define Program
+
 - (IBAction)acctionCat {
     NSArray *arr=[[[menuController controller].dictSig allKeys] retain];
     [self.array removeAllObjects];

@@ -90,13 +90,120 @@
     //
     NSLog(@"theJson URL --- > %@%@",[requriedFunction requriedFunction_BaseURL],theJSON);
     
-    [request setDelegate:(id)self];
+    theJSON = [theJSON stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSString *url = [NSString stringWithFormat:@"http://www.samenrico.com/api_new/json_check.php?requestJson=%@", theJSON];
+    NSURL *urlBookDetail = [NSURL URLWithString:url];
+    NSMutableURLRequest *bookRequest = [NSMutableURLRequest requestWithURL:urlBookDetail cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:120];
+    
+    bookDetailCon = [NSURLConnection connectionWithRequest:bookRequest delegate:self];
+    bookData = [[NSMutableData alloc]init];
+    
+    /*[request setDelegate:(id)self];
     [request setRequestMethod:@"POST"];
     [request setPostValue:@"json" forKey:@"action"];
     [request setPostValue:theJSON forKey:@"requestJson"];
     [request setTag:2];
-    [request startSynchronous];
+    [request startSynchronous];*/
     //{"method":"search","params":{"publish_type":"book","category":"Crime,-Thrillers-and-Mystery"}}
+}
+
+
+#pragma mark - connection
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    
+    if(connection == bookDetailCon)
+    {
+        [bookData setLength:0];
+    }
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    
+    if(connection == bookDetailCon)
+    {
+        [bookData appendData:data];
+    }
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    
+    if(connection == bookDetailCon)
+    {
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil, nil];
+        [alert show];
+    }
+    
+    [hud removeFromSuperview];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    
+    if(connection == bookDetailCon)
+    {
+        NSError *myError = nil;
+        NSLog(@"%@",[NSJSONSerialization JSONObjectWithData:bookData options:NSJSONReadingMutableLeaves error:&myError]);
+        
+        
+        //NSString *str=[request responseString];a
+        //SBJSON *parser = [[SBJSON alloc] init];
+        self.dict = [NSJSONSerialization JSONObjectWithData:bookData options:NSJSONReadingMutableLeaves error:&myError];
+        self.dict=[self.dict objectForKey:@"info"];
+        if ([[self.dict objectForKey:@"success"] isEqualToString:@"false"]) {
+            [requriedFunction requriedFunction_Alert:@"No record found."];
+            return;
+        }
+        
+        self.array=[self.dict objectForKey:@"list"];
+        
+        if ([self.arrayArticle count]!=0) {
+            [self.pickerCont reloadAllComponents];
+        }
+        //[self.tableCont reloadData];
+        NSDictionary *d=[self.array objectAtIndex:0];
+        //self.lblPrice=[
+        self.strUserId=[requriedFunction requriedFunction_isNULL:[d objectForKey:@"user_id"]];
+        self.lblEdition.text=[requriedFunction requriedFunction_isNULL:[d objectForKey:@"book_edition"]];
+        self.lblBookRelease.text=[requriedFunction requriedFunction_isNULL:[d objectForKey:@"book_release_date"]];
+        self.lblBookPublisher.text=[requriedFunction requriedFunction_isNULL:[d objectForKey:@"author"]];
+        self.lblLanguage.text=[requriedFunction requriedFunction_isNULL:[d objectForKey:@"language"]];
+        self.lblCountry.text=[requriedFunction requriedFunction_isNULL:[d objectForKey:@"country"]];
+        self.txtDesc.text=[requriedFunction requriedFunction_isNULL:[d objectForKey:@"this_publication"]];
+        self.strBookPrice=[requriedFunction requriedFunction_isNULL:[d objectForKey:@"price"]];
+        NSString *strprice=[requriedFunction requriedFunction_isNULL:self.strBookPrice];
+        if ([strprice isEqualToString:@""]) {
+            strprice=@"0.0";
+        }
+        self.lblPrice.text=[NSString stringWithFormat:@"Buy publication $%@",strprice];
+        self.lblSubscribe.text=[NSString stringWithFormat:@"Subscribe $%@",[requriedFunction requriedFunction_isNULL:[d objectForKey:@"subscription_price"]]];
+        self.lblDelivery.text=[NSString stringWithFormat:@"Delivered: Daily-Monthly-Price $%@",[requriedFunction requriedFunction_isNULL:[d objectForKey:@"subscription_price"]]];
+        self.lblBookName.text=[requriedFunction requriedFunction_isNULL:self.strBookAuthor];
+        [self.array removeAllObjects];
+        if ([requriedFunction requriedFunction_isNULLBOOL:[self.dict objectForKey:@"more_book"]]) {
+            self.array=[self.dict objectForKey:@"more_book"];
+        }
+        
+        [self.tableCont reloadData];
+        [self.arrayArticle removeAllObjects];
+        [self.FreeArticle removeAllObjects];
+        
+        if ([requriedFunction requriedFunction_isNULLBOOL:[self.dict objectForKey:@"article_list"]]) {
+            self.arrayArticle = [self.dict objectForKey:@"article_list"];
+            
+            for(int i = 1;i<[self.arrayArticle count];i++)
+            {
+                [self.FreeArticle  addObject:[self.arrayArticle objectAtIndex:i]];
+                i++;
+            }
+        }
+        [self.tblData reloadData];
+        
+        
+        
+        [hud removeFromSuperview];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -268,6 +375,9 @@
     Detatil.strSubscribePrice=self.lblSubscribe.text;
     [self.navigationController pushViewController:Detatil animated:YES];
     [Detatil release];*/
+    
+    ArticalViewController *vc = [[ArticalViewController alloc]initWithAricleArray:self.arrayArticle];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark-UserDefine

@@ -10,9 +10,12 @@
 #import "AsyncImageView.h"
 @class shelfViewController;
 #import <StoreKit/StoreKit.h>
+#import "ArticalViewController.h"
 
 @interface bookDetail : UIViewController<SKProductsRequestDelegate, SKPaymentTransactionObserver>{
     UIView *hud;
+    NSURLConnection *bookDetailCon;
+    NSMutableData *bookData;
     
 }
 @property (retain, nonatomic) IBOutlet UITableView *tblData;

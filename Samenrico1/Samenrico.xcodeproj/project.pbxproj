@@ -144,6 +144,8 @@
 		3BAF48441705DFB200959D89 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BAF48421705DFB200959D89 /* Logo@2x.png */; };
 		702609F41850CC9B0044EE4B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702609F11850CC9B0044EE4B /* HomeViewController.xib */; };
 		702609F51850CC9B0044EE4B /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702609F21850CC9B0044EE4B /* SplashViewController.xib */; };
+		702609F9185101330044EE4B /* ArticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702609F7185101330044EE4B /* ArticalViewController.m */; };
+		702609FA185101330044EE4B /* ArticalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702609F8185101330044EE4B /* ArticalViewController.xib */; };
 		70B45D59184BAB9900D1B92F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B45D58184BAB9900D1B92F /* QuartzCore.framework */; };
 		70B45D7F184BC4E800D1B92F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B45D7E184BC4E800D1B92F /* iCarousel.m */; };
 		70D27833184E655700A83709 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D27832184E655700A83709 /* HomeViewController.m */; };
@@ -403,6 +405,9 @@
 		3BAF48421705DFB200959D89 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
 		702609F11850CC9B0044EE4B /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = ../../../../../../../Users/shripaljain1/Desktop/Samenrico1/Home/Xibs/HomeViewController.xib; sourceTree = "<group>"; };
 		702609F31850CC9B0044EE4B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../../../../../../../Users/shripaljain1/Desktop/Samenrico1/Samenrico/en.lproj/SplashViewController.xib; sourceTree = "<group>"; };
+		702609F6185101330044EE4B /* ArticalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticalViewController.h; sourceTree = "<group>"; };
+		702609F7185101330044EE4B /* ArticalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticalViewController.m; sourceTree = "<group>"; };
+		702609F8185101330044EE4B /* ArticalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticalViewController.xib; sourceTree = "<group>"; };
 		70B45D56184BAB8F00D1B92F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		70B45D58184BAB9900D1B92F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		70B45D7D184BC4E800D1B92F /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -1074,6 +1079,9 @@
 			children = (
 				804DBBB8170A2D5A0063E869 /* bookDetail.h */,
 				804DBBB9170A2D5A0063E869 /* bookDetail.m */,
+				702609F6185101330044EE4B /* ArticalViewController.h */,
+				702609F7185101330044EE4B /* ArticalViewController.m */,
+				702609F8185101330044EE4B /* ArticalViewController.xib */,
 				7F7CF740184E45DA00335DE7 /* About_SubcribeViewController.h */,
 				7F7CF741184E45DA00335DE7 /* About_SubcribeViewController.m */,
 				80EEED6817133EC8002DCD26 /* articleDetail.h */,
@@ -1493,6 +1501,7 @@
 				3B5B36A717196BE300BA323C /* lbl_forgotpassword@2x.png in Resources */,
 				3B5B36A817196BE300BA323C /* twitter.png in Resources */,
 				3B5B36A917196BE300BA323C /* twitter@2x.png in Resources */,
+				702609FA185101330044EE4B /* ArticalViewController.xib in Resources */,
 				702609F51850CC9B0044EE4B /* SplashViewController.xib in Resources */,
 				3B5B36AB17196C7A00BA323C /* ForgotPasswordViewController612.xib in Resources */,
 				3B5B36AE17196F7800BA323C /* signup-bg.png in Resources */,
@@ -1573,6 +1582,7 @@
 				805367501706315C00DB8E26 /* ASINetworkQueue.m in Sources */,
 				805367511706315C00DB8E26 /* Reachability2.m in Sources */,
 				70B45D7F184BC4E800D1B92F /* iCarousel.m in Sources */,
+				702609F9185101330044EE4B /* ArticalViewController.m in Sources */,
 				805367611706317400DB8E26 /* NSObject+SBJSON.m in Sources */,
 				805367621706317400DB8E26 /* NSString+SBJSON.m in Sources */,
 				805367631706317400DB8E26 /* SBJSON.m in Sources */,
